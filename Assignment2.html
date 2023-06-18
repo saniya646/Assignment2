@@ -2,13 +2,33 @@
 <html lang="en">
 <head>
     <title>Registration</title>
+    <style>
+        body{
+            background-color: rgb(189, 81, 189);
+        }
+        form{
+            background-color: rgb(118, 14, 101); 
+            width: 500px;  
+        }
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        .btn {
+            padding: 15px 20px;
+            cursor: pointer;
+            width: 100%;
+            opacity: 1;
+          }
+          
+    </style>
 </head>
 <body>
-    <form name="Registration_form" action="" method="post">
-        Name:<input type="text" name="name"/>
+    <form class="center" name="Registration_form" action="" method="post"><fieldset>
+        Name:<input type="text" placeholder="Your name"  name="name"/>
         <br>
         <br>
-        Email:<input type="email" name="email"/>
+        Email:<input type="email" placeholder="Your email"  name="email"/>
         <br>
         <br>
         Password:<input type="password" name="password"/>
@@ -23,7 +43,8 @@
         Other:<input type="radio" name="Other"/>
         <br>
         <br>
-        Language:<select  type="language" name="language">
+        Language:<select  type="language"  name="language">
+        <option value="select language">select language</option>
         <option value="English">English</option>
         <option value="Hindi">Hindi</option>
         <option value="Telugu">Telugu</option>
@@ -35,10 +56,11 @@
         <br>
         <br>
         About:<br>
-        <textarea name="about" rows="4" cols="50"></textarea>
+        <textarea name="about" rows="4" cols="50" placeholder="Write about yourself..."></textarea>
         <br>
         <br>
-        <input type="submit" value="Register">
+        <button type="submit" class="btn">Register</button>
+    </fieldset>
     </form>
 
 </body>
